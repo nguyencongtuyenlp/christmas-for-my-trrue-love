@@ -55,11 +55,11 @@
 <body>
     <div id="error-log"></div>
     <div id="ui-layer">
-        <div id="status" class="badge">🎄 Giang Sinh An Lanh 🎄</div>
+        <div id="status" class="badge">🎄 Merry Christmas🎄</div>
         <div class="guide">
             🖐 <b>Xòe:</b> Bung Quà & Đèn &nbsp;|&nbsp; 👌 <b>Pinch:</b> Xem ảnh &nbsp;|&nbsp; ✊ <b>Nắm:</b> Thu cây
         </div>
-        <button id="btnStart" onclick="startSystem()">BẮT ĐẦU</button>
+        <button id="btnStart" onclick="startSystem()">BẮT ĐẦU NÈ!</button>
     </div>
 
     <div id="canvas-container"></div>
@@ -414,17 +414,17 @@
 
                     if (avgDist < 0.25) { 
                         state = 'TREE'; 
-                        statusDiv.innerText = "✊ Thu Cây Thông"; statusDiv.style.color = "#FFD700";
+                        statusDiv.innerText = "✊ Cây Thông"; statusDiv.style.color = "#FFD700";
                     } else if (pinchDist < 0.05) {
                         state = 'PHOTO';
-                        statusDiv.innerText = "👌 Xem Ảnh"; statusDiv.style.color = "#00FFFF";
+                        statusDiv.innerText = "👌 Xem Ảnh Babe"; statusDiv.style.color = "#00FFFF";
                     } else {
                         state = 'EXPLODE'; 
                         statusDiv.innerText = "🖐 Bung Quà & Ảnh"; statusDiv.style.color = "#FFA500";
                     }
                 } else {
                     state = 'TREE'; 
-                    statusDiv.innerText = "🎄 Giang Sinh An Lanh 🎄"; statusDiv.style.color = "#FFF";
+                    statusDiv.innerText = "🎄 CHÚC BABE CỦA ANH GIÁNG SINH VUI VẺ BÊN ANH🎄"; statusDiv.style.color = "#FFF";
                 }
             });
 
